@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login1"
+    tools:context=".SettingActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/profile"
+                app:civ_border_width="5dp"
+                android:layout_marginTop="20dp"
+                app:civ_border_color="#A10404"/>
+
+            <EditText
+                android:id="@+id/Full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#F16262"
+                android:hint="Enter Full Name..."
+                android:gravity="left"
+                android:inputType="textMultiLine"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#F16262"
+                android:hint="Enter Number..."
+                android:gravity="left"
+                android:inputType="phone"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/City"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#F16262"
+                android:hint="Enter City..."
+                android:gravity="left"
+                android:inputType="textMultiLine"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#F16262"
+                android:hint="EnterAddress..."
+                android:gravity="left"
+                android:inputType="textMultiLine"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/update_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#3C0202"
+                android:textColor="#F16262"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Update Details"
+
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

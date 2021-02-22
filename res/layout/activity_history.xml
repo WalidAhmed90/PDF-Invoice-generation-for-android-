@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#878282"
+    tools:context=".HistoryActivity">
+
+    <include
+        android:id="@+id/customer_list_bar"
+        layout="@layout/app_bar_layout"
+        ></include>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_customer_list"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/customer_list_bar"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

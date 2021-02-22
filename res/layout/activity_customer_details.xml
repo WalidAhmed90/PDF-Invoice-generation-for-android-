@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login1"
+    tools:context=".CustomerDetailsActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Customer Details"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp"
+
+                />
+
+
+
+            <EditText
+                android:id="@+id/Customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#F16262"
+                android:hint="Enter Customer Name..."
+                android:gravity="left"
+                android:inputType="textMultiLine"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"/>
+
+
+
+            <EditText
+                android:id="@+id/Customer_Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#F16262"
+                android:hint="Enter Phone..."
+                android:gravity="left"
+                android:inputType="phone"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"/>
+
+
+            <Button
+                android:id="@+id/Next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:background="#3C0202"
+                android:textColor="#F16262"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Next"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
